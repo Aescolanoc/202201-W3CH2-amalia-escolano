@@ -5,8 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint"
+    "test": "jest",
+    "lint": "eslint",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "sass:watch": "sass --watch"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
     "eslint": "^8.8.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.4"
+    "eslint-plugin-import": "^2.25.4",
+    "sass": "^1.49.4"
   }
 }
