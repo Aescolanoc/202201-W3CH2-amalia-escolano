@@ -1,0 +1,20 @@
+{
+  "name": "202201-w3ch2-amalia-escolano",
+  "version": "1.0.0",
+  "description": "202201-W3CH2-amalia-escolano",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aescolanoc/202201-W3CH2-amalia-escolano.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aescolanoc/202201-W3CH2-amalia-escolano/issues"
+  },
+  "homepage": "https://github.com/Aescolanoc/202201-W3CH2-amalia-escolano#readme"
+}
