@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "202201-W3CH2-amalia-escolano",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/Aescolanoc/202201-W3CH2-amalia-escolano/issues"
   },
-  "homepage": "https://github.com/Aescolanoc/202201-W3CH2-amalia-escolano#readme"
+  "homepage": "https://github.com/Aescolanoc/202201-W3CH2-amalia-escolano#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
 }
