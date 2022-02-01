@@ -2,7 +2,6 @@ export class Component {
   template;
   render(selector) {
     const element = document.querySelector(selector);
-    console.log(selector);
     element.outerHTML = this.template;
   }
 }
