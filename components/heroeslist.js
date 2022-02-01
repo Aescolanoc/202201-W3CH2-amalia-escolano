@@ -8,14 +8,12 @@ export class Heroeslist extends Component {
     super();
     this.heroes = Heroes;
 
-    this.template = `
-      <ul>
-      `;
+    let template = `<ul>`;
     this.heroes.forEach((item) => {
-      template += `<li>${item}</li>`;
+      console.log(item.name);
+      template += `<li>${item.name}</li>`;
     });
-    template += `
-      </ul>
-    `;
+    template += `</ul>`;
+    this.template = template;
   }
 }
