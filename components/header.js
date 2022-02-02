@@ -7,7 +7,7 @@ export class Header extends Component {
     super();
 
     this.template = `
-      <header>
+      <header id="header">
         <h1 class="header__title">${title}</h1>
         <ul>
         <li><a href="/index.html">Dashboard</a></li>
