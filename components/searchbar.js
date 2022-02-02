@@ -12,4 +12,10 @@ export class Searchbar extends Component {
     </form>
     `;
   }
+  // heroToSearch(){
+  //   const element = element.querySelector('#topheroes').value
+  //   element.querySelector('form').addEventListener('submit', (ev) => {
+  //     ev.preventDefault();
+  //     this.
+  // }
 }

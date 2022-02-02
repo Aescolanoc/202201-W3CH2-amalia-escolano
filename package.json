@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/Aescolanoc/202201-W3CH2-amalia-escolano#readme",
   "devDependencies": {
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/user-event": "^13.5.0",
     "eslint": "^8.8.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
