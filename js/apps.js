@@ -1,7 +1,6 @@
 import { Header } from "../components/header.js";
 import { Topheroes } from "../components/topheroes.js";
 import { Searchbar } from "../components/searchbar.js";
-import { Newheroform } from "../components/newheroeform.js";
 import { Heroeslist } from "../components/heroeslist.js";
 import { Detail } from "../components/detail.js";
 
@@ -15,8 +14,7 @@ import { Detail } from "../components/detail.js";
         break;
 
       case "/pages/heroes.html":
-        new Newheroform().renderInner("#newheroform");
-        new Heroeslist().renderInner("#heroeslist");
+        new Heroeslist();
         break;
 
       default:
