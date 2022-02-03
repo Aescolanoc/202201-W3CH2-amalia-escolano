@@ -3,9 +3,14 @@ import { Topheroes } from "../components/topheroes.js";
 import { Searchbar } from "../components/searchbar.js";
 import { Heroeslist } from "../components/heroeslist.js";
 import { Detail } from "../components/detail.js";
+import { Heroes } from "../heroes.js";
 
 (() => {
   const main = () => {
+    if (!localStorage.getItem("heroes")) {
+      localStorage.setItem("heroes", JSON.stringify(Heroes));
+    }
+
     new Header().render("#header");
     switch (location.pathname) {
       case "/index.html":
@@ -25,3 +30,10 @@ import { Detail } from "../components/detail.js";
 
   document.addEventListener("DOMContentLoaded", main);
 })();
+
+// deleteHero(index) {//esta funcion tiene que se global
+//   this.heroes.splice(index, 1);
+//   localStorage.setItem("heroes", JSON.stringify(this.heroes));
+//   this.template = this.generateTemplate();
+//   this.renderInner("#heroeslist");
+// }

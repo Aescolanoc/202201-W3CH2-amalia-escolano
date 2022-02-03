@@ -1,14 +1,11 @@
 import { Component } from "../components/component.js";
-import { Heroes } from "../heroes.js";
 
 export class Heroeslist extends Component {
   template;
 
   constructor() {
     super();
-    this.heroes = localStorage.getItem("heroes")
-      ? JSON.parse(localStorage.getItem("heroes"))
-      : Heroes;
+    this.heroes = JSON.parse(localStorage.getItem("heroes"));
     this.template = this.generateTemplate();
     this.renderInner("#heroeslist");
     this.addHero();
@@ -45,10 +42,4 @@ export class Heroeslist extends Component {
       this.addHero();
     });
   }
-  // deleteHero(index) {
-  //   this.heroes.splice(index, 1);
-  //   localStorage.setItem("heroes", JSON.stringify(this.heroes));
-  //   this.template = this.generateTemplate();
-  //   this.renderInner("#heroeslist");
-  // }
 }

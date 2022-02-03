@@ -1,14 +1,12 @@
 import { Component } from "../components/component.js";
-import { Heroes } from "../heroes.js";
+
 export class Detail extends Component {
   template;
 
   constructor() {
     super();
 
-    this.heroes = localStorage.getItem("heroes")
-      ? JSON.parse(localStorage.getItem("heroes"))
-      : Heroes;
+    this.heroes = JSON.parse(localStorage.getItem("heroes"));
     let hero = this.wichHero();
 
     this.template = `
