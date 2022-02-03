@@ -6,14 +6,15 @@ export class Topheroes extends Component {
   heroes;
   constructor(title = "Top Heroes") {
     super();
+    this.heroes = JSON.parse(localStorage.getItem("heroes"));
 
     this.template = `
       <h2>${title}</h2>
       <div>
-      <a href="/pages/details.html?id=${Heroes[1].id}">${Heroes[1].name}</a>
-      <a href="/pages/details.html?id=${Heroes[2].id}">${Heroes[2].name}</a>
-      <a href="/pages/details.html?id=${Heroes[3].id}">${Heroes[3].name}</a>
-      <a href="/pages/details.html?id=${Heroes[4].id}">${Heroes[4].name}</a>
+      <a href="/pages/details.html?id=${this.heroes[1].id}">${this.heroes[1].name}</a>
+      <a href="/pages/details.html?id=${this.heroes[2].id}">${this.heroes[2].name}</a>
+      <a href="/pages/details.html?id=${this.heroes[3].id}">${this.heroes[3].name}</a>
+      <a href="/pages/details.html?id=${this.heroes[4].id}">${this.heroes[4].name}</a>
       </div>
     `;
   }
