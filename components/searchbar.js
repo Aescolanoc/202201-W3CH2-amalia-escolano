@@ -8,7 +8,7 @@ export class Searchbar extends Component {
     this.template = `
     <form >
         <label for="search">Hero Search</label>
-        <input id="search" type="text"/>
+        <input id="search" type="text" required/>
     </form>
     `;
   }

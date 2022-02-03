@@ -14,6 +14,6 @@ describe("testing Header", () => {
 
     new Header().render("#header");
 
-    expect(screen.getByRole("listitem", { name: "Dashboard" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Dashboard" })).toBeTruthy();
   });
 });
